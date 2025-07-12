@@ -10,6 +10,6 @@ spec:
   ports:
     - port: 4180
       targetPort: 4180
-      nodePort: 30180  # You can choose any port between 30000-32767
+      nodePort: 30180  
 
 
