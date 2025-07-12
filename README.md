@@ -156,3 +156,40 @@ Login was done using the bearer token generated in Step 3.
 
 <img width="946" height="467" alt="image" src="https://github.com/user-attachments/assets/62a3cd6b-767b-41c4-b7fc-c4949f83e906" />
 
+🛡️ OAuth2 Proxy Secured Whoami Application with Keycloak OIDC Integration
+🔹 What it is:
+A simple Whoami app secured by OAuth2 Proxy using Keycloak as the OpenID Connect (OIDC) identity provider.
+
+🔎 Architecture Overview
+🖥️ Whoami App — Minimal HTTP service showing request info (for testing auth).
+
+🔐 OAuth2 Proxy — Auth proxy validating users via Keycloak OIDC tokens.
+
+🔑 Keycloak — Central authentication provider issuing OAuth2/OIDC tokens.
+
+☸️ Kubernetes Deployment — Both apps run as pods exposed externally.
+
+🚪 Exposure & Access
+🔌 NodePort Service — OAuth2 Proxy is exposed via NodePort (30180) on the Kubernetes node.
+
+🌐 Hostnames configured in /etc/hosts like oauth2-proxy.local and whoami.local pointing to the cluster IP for convenience.
+
+🔒 TLS — HTTPS enabled on OAuth2 Proxy using self-signed certificates.
+
+⚙️ How It Works
+User accesses https:<EC2_PUBLIC_IP>//:30180)
+
+OAuth2 Proxy redirects unauthenticated users to Keycloak login.
+
+After login, Keycloak issues a token which OAuth2 Proxy validates.
+
+Authenticated requests are forwarded to Whoami with user info headers.
+
+Whoami responds confirming authenticated access.
+
+<img width="957" height="260" alt="image" src="https://github.com/user-attachments/assets/564d6945-4f19-46e8-a142-6d24944bc648" />
+
+
+
+
+
