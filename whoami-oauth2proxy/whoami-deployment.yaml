@@ -1,10 +1,7 @@
-# whoami-deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: whoami
-  labels:
-    app: whoami
 spec:
   replicas: 1
   selector:
@@ -20,7 +17,13 @@ spec:
         image: containous/whoami
         ports:
         - containerPort: 80
-
+        resources:               # <-- Add resource limits & requests here
+          requests:
+            cpu: "250m"
+            memory: "512Mi"
+          limits:
+            cpu: "500m"
+            memory: "1Gi"
 ---
 apiVersion: v1
 kind: Service
