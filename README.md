@@ -1,4 +1,4 @@
-<img width="836" height="747" alt="Screenshot 2025-07-12 202940" src="https://github.com/user-attachments/assets/4273094c-5a6a-4d21-935c-c7de8017bf92" />
+![Architecture Diagram](screenshots/Architecture.png)
 
 
 
@@ -37,7 +37,7 @@ Ran the following commands to verify successful installation:
 kubectl get nodes
 kubectl get pods -A
 
-<img width="764" height="217" alt="image" src="https://github.com/user-attachments/assets/72928ad5-e806-445a-aca5-fd257ea87dd7" />
+![Cluster Pods](screenshots/Clusterpods.png)
 
 
 
@@ -62,10 +62,10 @@ The following commands were used to validate the PostgreSQL deployment:
 kubectl get pods -l app=postgres
 kubectl exec -it postgres-0 -- psql -U keycloak -d keycloakdb
 
-<img width="940" height="194" alt="image" src="https://github.com/user-attachments/assets/97aeaca4-f014-4658-bd36-acf55687ffa6" />
+![PostgreSQL Pod](screenshots/postgre.png)
 
 
-<img width="479" height="250" alt="image" src="https://github.com/user-attachments/assets/8e9e7137-8c33-4851-9488-cec348dff98d" />
+![PostgreSQL Storage](screenshots/postgre2.png)
 
 
 
@@ -115,11 +115,13 @@ Accessed via HTTPS using NodePort:
 ✅ In Browser:
 https://keycloak.local:31319
 
-<img width="1911" height="984" alt="Screenshot 2025-07-11 115224" src="https://github.com/user-attachments/assets/797ce93b-289c-45f7-a74e-cae74ee69a8f" />
+![Keycloak Login](screenshots/keycloak1.png)
 
-<img width="959" height="470" alt="image" src="https://github.com/user-attachments/assets/6559e1ec-1e3c-4f94-b377-7b98999f7ae2" />
 
-<img width="958" height="471" alt="image" src="https://github.com/user-attachments/assets/cfa995ae-a0f5-483c-b265-f83ad64c3ba2" />
+![Keycloak Admin](screenshots/keycloak2.png)
+
+
+![Keycloak Users](screenshots/keycloak3.png)
 
 
 🧰 Dashboard Installation
@@ -154,15 +156,19 @@ Dashboard UI was successfully accessed via:
 https://dashboard.local:30595
 Login was done using the bearer token generated in Step 3.
 
-<img width="944" height="454" alt="image" src="https://github.com/user-attachments/assets/3f83cb92-42e9-4b92-a867-3d11af9cc2a3" />
+![Dashboard Login](screenshots/dashboard1.png)
 
-<img width="950" height="470" alt="image" src="https://github.com/user-attachments/assets/fd26d68e-0d0d-45f4-8953-33d295b4565b" />
 
-<img width="956" height="469" alt="image" src="https://github.com/user-attachments/assets/19d39692-9928-458c-988f-0196eda6b62d" />
+![Dashboard Overview](screenshots/dashboard2.png)
 
-<img width="946" height="361" alt="image" src="https://github.com/user-attachments/assets/71732a60-4b4e-49d8-8ebd-b6f642d03f96" />
 
-<img width="946" height="467" alt="image" src="https://github.com/user-attachments/assets/62a3cd6b-767b-41c4-b7fc-c4949f83e906" />
+![Namespaces](screenshots/dashboard3.png)
+
+
+![Pods](screenshots/dashboard4.png)
+
+
+![Metrics](screenshots/dashboard5.png)
 
 
 🛡️ OAuth2 Proxy Secured Whoami Application with Keycloak OIDC Integration
@@ -196,8 +202,8 @@ Authenticated requests are forwarded to Whoami with user info headers.
 
 Whoami responds confirming authenticated access.
 
-<img width="957" height="260" alt="image" src="https://github.com/user-attachments/assets/564d6945-4f19-46e8-a142-6d24944bc648" />
 
+![Whoami App](screenshots/whoami.png)
 
 
 
