@@ -36,6 +36,7 @@ kubectl get pods -A
 <img width="764" height="217" alt="image" src="https://github.com/user-attachments/assets/72928ad5-e806-445a-aca5-fd257ea87dd7" />
 
 
+
 🐘 PostgreSQL Deployment
 This step sets up a standalone PostgreSQL instance inside the Kubernetes cluster using a StatefulSet, PersistentVolumeClaim, and a ClusterIP service. It is securely configured with credentials, persistent storage, resource limits, health probes, and an automation script.
 
@@ -60,6 +61,7 @@ kubectl exec -it postgres-0 -- psql -U keycloak -d keycloakdb
 
 
 <img width="479" height="250" alt="image" src="https://github.com/user-attachments/assets/8e9e7137-8c33-4851-9488-cec348dff98d" />
+
 
 
 
@@ -114,6 +116,7 @@ https://keycloak.local:31319
 
 <img width="958" height="471" alt="image" src="https://github.com/user-attachments/assets/cfa995ae-a0f5-483c-b265-f83ad64c3ba2" />
 
+
 🧰 Dashboard Installation
 The official Kubernetes Dashboard components were deployed into the kubernetes-dashboard namespace:
 
@@ -155,6 +158,7 @@ Login was done using the bearer token generated in Step 3.
 <img width="946" height="361" alt="image" src="https://github.com/user-attachments/assets/71732a60-4b4e-49d8-8ebd-b6f642d03f96" />
 
 <img width="946" height="467" alt="image" src="https://github.com/user-attachments/assets/62a3cd6b-767b-41c4-b7fc-c4949f83e906" />
+
 
 🛡️ OAuth2 Proxy Secured Whoami Application with Keycloak OIDC Integration
 🔹 What it is:
