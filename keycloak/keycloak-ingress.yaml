@@ -21,4 +21,3 @@ spec:
                 name: keycloak
                 port:
                   number: 8080
-
