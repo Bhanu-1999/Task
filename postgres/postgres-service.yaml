@@ -8,5 +8,5 @@ spec:
   ports:
     - port: 5432
       targetPort: 5432
-  clusterIP: None  # For stable DNS (required for StatefulSet)
+  clusterIP: None  
 
