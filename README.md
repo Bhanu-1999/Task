@@ -1,3 +1,8 @@
+## 🖼️ Screenshots
+
+### 🧭 Architecture Diagram
+An overview of the deployed architecture on Kubernetes, including PostgreSQL, Keycloak, OAuth2-proxy, and the Dashboard.
+
 ![Architecture Diagram](screenshots/Architecture.png)
 
 
@@ -37,6 +42,11 @@ Ran the following commands to verify successful installation:
 kubectl get nodes
 kubectl get pods -A
 
+---
+
+### 📦 Cluster Pods
+Shows all running pods across namespaces, confirming the successful deployment of all components.
+
 ![Cluster Pods](screenshots/Clusterpods.png)
 
 
@@ -62,10 +72,17 @@ The following commands were used to validate the PostgreSQL deployment:
 kubectl get pods -l app=postgres
 kubectl exec -it postgres-0 -- psql -U keycloak -d keycloakdb
 
+---
+
+## 🛢️ PostgreSQL Deployment
+
+#### ✅ PostgreSQL Pod Running
 ![PostgreSQL Pod](screenshots/postgre.png)
 
-
+#### 💾 Persistent Volume Claim
 ![PostgreSQL Storage](screenshots/postgre2.png)
+
+---
 
 
 
@@ -115,12 +132,15 @@ Accessed via HTTPS using NodePort:
 ✅ In Browser:
 https://keycloak.local:31319
 
+## 🔐 Keycloak Admin Console
+
+#### 🔑 Login Page
 ![Keycloak Login](screenshots/keycloak1.png)
 
-
+#### ⚙️ Admin Console (Clients/Realm)
 ![Keycloak Admin](screenshots/keycloak2.png)
 
-
+#### 👤 User Management
 ![Keycloak Users](screenshots/keycloak3.png)
 
 
@@ -156,19 +176,26 @@ Dashboard UI was successfully accessed via:
 https://dashboard.local:30595
 Login was done using the bearer token generated in Step 3.
 
+
+## 📊 Kubernetes Dashboard
+
+#### 🔐 Dashboard Login
 ![Dashboard Login](screenshots/dashboard1.png)
 
-
+#### 📋 Dashboard Overview
 ![Dashboard Overview](screenshots/dashboard2.png)
 
-
+#### 🗂️ Namespaces View
 ![Namespaces](screenshots/dashboard3.png)
 
-
+#### 📦 Pods View
 ![Pods](screenshots/dashboard4.png)
 
-
+#### 📈 Metrics View
 ![Metrics](screenshots/dashboard5.png)
+
+
+
 
 
 🛡️ OAuth2 Proxy Secured Whoami Application with Keycloak OIDC Integration
@@ -202,6 +229,10 @@ Authenticated requests are forwarded to Whoami with user info headers.
 
 Whoami responds confirming authenticated access.
 
+
+## 🌍 Whoami OAuth2 Demo
+
+A working demo of OAuth2 Proxy with the Whoami app for identity testing.
 
 ![Whoami App](screenshots/whoami.png)
 
