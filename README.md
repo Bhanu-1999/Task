@@ -116,6 +116,10 @@ https://keycloak.local:31319
 
 <img width="1911" height="984" alt="Screenshot 2025-07-11 115224" src="https://github.com/user-attachments/assets/797ce93b-289c-45f7-a74e-cae74ee69a8f" />
 
+<img width="959" height="470" alt="image" src="https://github.com/user-attachments/assets/6559e1ec-1e3c-4f94-b377-7b98999f7ae2" />
+
+<img width="958" height="471" alt="image" src="https://github.com/user-attachments/assets/cfa995ae-a0f5-483c-b265-f83ad64c3ba2" />
+
 
 
 🧰 Dashboard Installation
@@ -163,3 +167,10 @@ Login was done using the bearer token generated in Step 3.
 <img width="944" height="454" alt="image" src="https://github.com/user-attachments/assets/3f83cb92-42e9-4b92-a867-3d11af9cc2a3" />
 
 <img width="950" height="470" alt="image" src="https://github.com/user-attachments/assets/fd26d68e-0d0d-45f4-8953-33d295b4565b" />
+
+<img width="956" height="469" alt="image" src="https://github.com/user-attachments/assets/19d39692-9928-458c-988f-0196eda6b62d" />
+
+<img width="946" height="361" alt="image" src="https://github.com/user-attachments/assets/71732a60-4b4e-49d8-8ebd-b6f642d03f96" />
+
+<img width="946" height="467" alt="image" src="https://github.com/user-attachments/assets/62a3cd6b-767b-41c4-b7fc-c4949f83e906" />
+
