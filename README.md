@@ -1,6 +1,7 @@
 <img width="836" height="747" alt="Screenshot 2025-07-12 202940" src="https://github.com/user-attachments/assets/4273094c-5a6a-4d21-935c-c7de8017bf92" />
 
 
+
 ✅ Kubernetes Cluster Setup (Single Node)
 Created an EC2 t3.medium with 2 CPU and 20GB Ubuntu 22.04.
 
@@ -37,6 +38,7 @@ kubectl get nodes
 kubectl get pods -A
 
 <img width="764" height="217" alt="image" src="https://github.com/user-attachments/assets/72928ad5-e806-445a-aca5-fd257ea87dd7" />
+
 
 
 
