@@ -1,9 +1,8 @@
-## 🖼️ Screenshots
 
 ### 🧭 Architecture Diagram
 An overview of the deployed architecture on Kubernetes, including PostgreSQL, Keycloak, OAuth2-proxy, and the Dashboard.
 
-![Architecture Diagram](screenshots/Architecture.png)
+![Architecture Diagram](Architecture.png)
 
 
 
@@ -47,7 +46,7 @@ kubectl get pods -A
 ### 📦 Cluster Pods
 Shows all running pods across namespaces, confirming the successful deployment of all components.
 
-![Cluster Pods](screenshots/Clusterpods.png)
+![Cluster Pods](Clusterpods.png)
 
 
 
@@ -77,10 +76,10 @@ kubectl exec -it postgres-0 -- psql -U keycloak -d keycloakdb
 ## 🛢️ PostgreSQL Deployment
 
 #### ✅ PostgreSQL Pod Running
-![PostgreSQL Pod](screenshots/postgre.png)
+![PostgreSQL Pod](postgre.png)
 
 #### 💾 Persistent Volume Claim
-![PostgreSQL Storage](screenshots/postgre2.png)
+![PostgreSQL Storage](postgre2.png)
 
 ---
 
@@ -135,13 +134,13 @@ https://keycloak.local:31319
 ## 🔐 Keycloak Admin Console
 
 #### 🔑 Login Page
-![Keycloak Login](screenshots/keycloak1.png)
+![Keycloak Login](keycloak1.png)
 
 #### ⚙️ Admin Console (Clients/Realm)
-![Keycloak Admin](screenshots/keycloak2.png)
+![Keycloak Admin](keycloak2.png)
 
 #### 👤 User Management
-![Keycloak Users](screenshots/keycloak3.png)
+![Keycloak Users](keycloak3.png)
 
 
 🧰 Dashboard Installation
@@ -180,19 +179,19 @@ Login was done using the bearer token generated in Step 3.
 ## 📊 Kubernetes Dashboard
 
 #### 🔐 Dashboard Login
-![Dashboard Login](screenshots/dashboard1.png)
+![Dashboard Login](dashboard1.png)
 
 #### 📋 Dashboard Overview
-![Dashboard Overview](screenshots/dashboard2.png)
+![Dashboard Overview](dashboard2.png)
 
 #### 🗂️ Namespaces View
-![Namespaces](screenshots/dashboard3.png)
+![Namespaces](dashboard3.png)
 
 #### 📦 Pods View
-![Pods](screenshots/dashboard4.png)
+![Pods](dashboard4.png)
 
 #### 📈 Metrics View
-![Metrics](screenshots/dashboard5.png)
+![Metrics](dashboard5.png)
 
 
 
@@ -234,7 +233,7 @@ Whoami responds confirming authenticated access.
 
 A working demo of OAuth2 Proxy with the Whoami app for identity testing.
 
-![Whoami App](screenshots/whoami.png)
+![Whoami App](whoami.png)
 
 
 
