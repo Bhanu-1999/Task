@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: postgres-pvc
 spec:
-  volumeName: postgres-pv     # ✅ Bind to your static PV
+  volumeName: postgres-pv    
   accessModes:
     - ReadWriteOnce
   resources:
